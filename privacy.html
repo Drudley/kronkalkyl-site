@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Kronkalkyl</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/">Kronkalkyl</a><nav><a href="terms.html">Terms</a></nav></header>
+<main>
+<h1>Privacy Policy</h1>
+<p class="note">Last updated: 28 October 2026.</p>
+
+<p><b>Sammanfattning på svenska:</b> Kronkalkyl samlar inte in, säljer eller lagrar dina kalkylarksdata på egna servrar. Kontroller av person-, organisations-, konto-, OCR- och gironummer räknas helt inom Google Apps Script. Endast valutakod och datum skickas till Sveriges riksbank/ECB, momsregistreringsnummer till EU-kommissionens VIES och licensnyckeln till vår betalpartner Polar. Personuppgiftsansvarig: Niklas Bergström, support@kronkalkyl.se.</p>
+
+<h2>1. Who we are</h2>
+<p>Kronkalkyl ("the add-on") is a Google Sheets™ Editor add-on provided by Niklas Bergström<!-- TODO(ORG_NR): if the business gets registered (enskild firma / F-skatt), add ", org.nr XXXXXX-XXXX" here. -->, Umeå<!-- TODO(POSTAL_ADDRESS): add street address and postcode (Google OAuth verification and EU consumer rules expect a geographic address). -->, Sweden ("we"). Contact: <a href="mailto:support@kronkalkyl.se">support@kronkalkyl.se</a>.</p>
+
+<h2>2. What the add-on accesses and why</h2>
+<table>
+<tr><th>Google permission (OAuth scope)</th><th>Why it is needed</th></tr>
+<tr><td><code>spreadsheets.currentonly</code> – view and manage the spreadsheet the add-on is used in</td><td>To read the cells you pass to Kronkalkyl formulas or select in the batch-validation tool, and to write validation results into the empty column you choose. The add-on cannot open any other file in your Google Drive.</td></tr>
+<tr><td><code>script.container.ui</code> – display content in Google Sheets</td><td>To show the Kronkalkyl menu and sidebar.</td></tr>
+<tr><td><code>script.external_request</code> – connect to external services</td><td>To fetch exchange rates, check EU VAT numbers and validate your licence key (see section 3).</td></tr>
+</table>
+<p>We do not request access to your Gmail, Google Drive, contacts, calendar or profile.</p>
+
+<h2>3. Data sent to third parties</h2>
+<ul>
+<li><b>Sveriges riksbank</b> (api.riksbank.se) and, as a fallback, the <b>European Central Bank</b> (data-api.ecb.europa.eu): only a currency code and a date range. No spreadsheet content or personal data.</li>
+<li><b>European Commission VIES</b> (ec.europa.eu): the VAT number you pass to <code>VAT_VALID</code> or the batch tool. We read only the valid/not-valid flag from the response; trader names and addresses returned by VIES are discarded and never stored or shown.</li>
+<li><b>Polar Software Inc.</b> (api.polar.sh), our Merchant of Record: your licence key, to check whether your subscription is active. Purchases are made on Polar's checkout, and Polar processes your name, e-mail and payment details under <a href="https://polar.sh/legal/privacy">its own privacy policy</a>. We receive order and customer details from Polar to provide support and meet accounting obligations.</li>
+</ul>
+<p>Personal identity numbers (personnummer), organisation numbers, bank accounts, OCR, Bankgiro and Plusgiro numbers are validated entirely inside Google Apps Script and are <b>never sent to any external service</b>.</p>
+
+<h2>4. Data stored</h2>
+<ul>
+<li><b>In your spreadsheet's add-on storage (Document Properties):</b> your licence key (if you activate one), its last validation status and the start date of your free trial.</li>
+<li><b>In your Google account's add-on storage (User Properties):</b> your licence key, so you can apply it to other spreadsheets, and the start date of your free trial, so the 14-day trial is used once per account.</li>
+<li><b>In Google's temporary script cache (max 6 hours):</b> downloaded exchange rates, VAT-number validity results (the VAT number and true/false) and licence validation results keyed by a one-way hash of the key.</li>
+<li><b>In Google's Apps Script execution logs:</b> when a Kronkalkyl formula returns an error, Google records the error message for the add-on's developer. For invalid input the message can include the value you entered (for example an invalid number). These logs stay within Google Cloud, are used only to diagnose faults, and are deleted automatically under Google's standard log retention.</li>
+</ul>
+<p>Apart from the values listed in section 3, no spreadsheet data leaves Google.</p>
+<p>We run no servers of our own that receive your spreadsheet data. We do not use analytics or advertising trackers in the add-on. Uninstalling the add-on stops all processing; the cache expires within 6 hours, and "Remove licence" in the sidebar deletes the licence key and its status from that spreadsheet. The copy saved in your Google account's add-on storage is held only by Google for your account and is never sent to us; e-mail support@kronkalkyl.se if you need help removing it.</p>
+
+<h2>5. Google API Services User Data Policy</h2>
+<p>Kronkalkyl's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We do not sell user data, do not use it for advertising, do not use it to train AI/ML models, and do not allow humans to read it except with your explicit consent for support, for security purposes, or to comply with law.</p>
+
+<h2>6. Legal basis and your rights (GDPR)</h2>
+<p>We process licence and customer data to perform our contract with you (Art. 6(1)(b) GDPR) and to meet bookkeeping obligations (Art. 6(1)(c)). You may request access, rectification, erasure, restriction or portability, and object to processing, by e-mailing support@kronkalkyl.se. You may lodge a complaint with the Swedish Authority for Privacy Protection (IMY), imy.se.</p>
+
+<h2>7. Retention</h2>
+<p>Customer and order records are kept for as long as required by the Swedish Bookkeeping Act (currently 7 years). Cached data expires within 6 hours.</p>
+
+<h2>8. Changes</h2>
+<p>We will post changes on this page and update the date above. Material changes will be announced in the add-on sidebar.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="/">Kronkalkyl</a> · <a href="terms.html">Terms</a> · Google Sheets is a trademark of Google LLC.</footer>
+</body>
+</html>

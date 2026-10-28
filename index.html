@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kronkalkyl – svenska ekonomiformler för Google Kalkylark</title>
+<meta name="description" content="Riksbankens valutakurser, bankdagar, OCR, bankgiro, IBAN, organisations- och personnummer samt EU-momskontroll direkt i Google Kalkylark.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/">Kronkalkyl</a><nav><a href="#funktioner">Funktioner</a><a href="#priser">Priser</a><a href="#hjalp">Hjälp</a><a href="#english">English</a></nav></header>
+<main>
+<h1>Svenska ekonomiformler i Google Kalkylark</h1>
+<p class="lead">Kronkalkyl lägger till formler som <code>=RIKSBANK("EUR"; A2)</code>, <code>=SE_BANKDAY_ADD(A2; 30)</code>, <code>=OCR_CREATE(A2)</code> och <code>=SE_ACCOUNT_TO_IBAN(A2)</code> – byggt för redovisning, fakturering och lön i Sverige.</p>
+<!-- TODO(MARKETPLACE_URL): replace href="#hjalp" with the Google Workspace Marketplace listing URL once published, and restore the text "Installera från Google Workspace Marketplace". -->
+<a class="cta" href="#hjalp">Kommer snart till Google Workspace Marketplace</a>
+<!-- TODO(CHECKOUT_URL): replace href="#priser" with the Polar checkout link after the Polar product is created. -->
+<a class="cta secondary" href="#priser">Köp Pro</a>
+
+<h2 id="funktioner">Funktioner</h2>
+<div class="grid">
+  <div class="card"><b>Valutakurser</b><br>Riksbankens dagskurser och periodgenomsnitt för valfritt datum, med ECB som reserv. <code>RIKSBANK</code>, <code>RIKSBANK_AVG</code>, <code>SEK_CONVERT</code>.</div>
+  <div class="card"><b>Bankdagar & helgdagar</b><br>Alla svenska helgdagar, bankdagsräkning, förfallodagar och sista bankdag i månaden.</div>
+  <div class="card"><b>Betalningar</b><br>Skapa och kontrollera OCR-nummer, bankgiro, plusgiro, svenska kontonummer och IBAN.</div>
+  <div class="card"><b>Identiteter</b><br>Kontrollera och formatera organisations-, person- och samordningsnummer. Allt räknas lokalt i kalkylarket.</div>
+  <div class="card"><b>EU-moms</b><br><code>VAT_VALID</code> kontrollerar momsregistreringsnummer mot EU-kommissionens VIES – svarar bara giltigt/ogiltigt.</div>
+  <div class="card"><b>Massvalidering</b><br>Markera en kolumn och kontrollera tusentals nummer på en gång från sidopanelen.</div>
+</div>
+
+<h2>Funktionslista</h2>
+<table>
+<tr><th>Formel</th><th>Gör</th><th>Nivå</th></tr>
+<tr><td><code>ORGNR_VALID</code>, <code>ORGNR_FORMAT</code>, <code>ORGNR_TYPE</code>, <code>ORGNR_TO_VAT</code></td><td>Organisationsnummer</td><td>Gratis</td></tr>
+<tr><td><code>PNR_VALID</code>, <code>PNR_FORMAT</code>, <code>PNR_BIRTHDATE</code>, <code>PNR_AGE</code>, <code>PNR_GENDER</code>, <code>PNR_IS_COORDINATION</code></td><td>Person- och samordningsnummer</td><td>Gratis</td></tr>
+<tr><td><code>SE_HOLIDAYS</code>, <code>SE_HOLIDAY</code>, <code>SE_IS_BANKDAY</code></td><td>Helgdagar och bankdagar</td><td>Gratis</td></tr>
+<tr><td><code>SE_BANKDAY_ADD</code>, <code>SE_BANKDAYS</code>, <code>SE_BANKDAY_ADJUST</code>, <code>SE_MONTH_LAST_BANKDAY</code></td><td>Bankdagsräkning</td><td>Pro</td></tr>
+<tr><td><code>OCR_CREATE</code>, <code>OCR_VALID</code>, <code>BANKGIRO_*</code>, <code>PLUSGIRO_*</code></td><td>OCR, bankgiro, plusgiro</td><td>Pro</td></tr>
+<tr><td><code>SE_ACCOUNT_VALID</code>, <code>SE_ACCOUNT_TO_IBAN</code>, <code>SE_ACCOUNT_BANK</code>, <code>SE_ACCOUNT_BIC</code>, <code>IBAN_VALID</code>, <code>IBAN_FORMAT</code></td><td>Bankkonton och IBAN</td><td>Pro</td></tr>
+<tr><td><code>RIKSBANK</code>, <code>RIKSBANK_AVG</code>, <code>SEK_CONVERT</code>, <code>FX_SOURCE</code></td><td>Valutakurser</td><td>Pro</td></tr>
+<tr><td><code>VAT_VALID</code></td><td>EU-momsnummer (VIES)</td><td>Pro</td></tr>
+</table>
+
+<h2 id="priser">Priser</h2>
+<div class="grid">
+  <div class="card"><b>Gratis</b><br>0 kr. Organisations- och personnummer, helgdagar, bankdag ja/nej.</div>
+  <div class="card"><b>Pro</b><br>6 € / månad eller 48 € / år. Alla funktioner. 14 dagars gratis provperiod utan kort.</div>
+  <div class="card"><b>Team</b><br>15 € / månad för upp till 5 personer. 14 dagars gratis provperiod.</div>
+</div>
+<p class="note">Betalning hanteras av Polar (Polar Software Inc.) som återförsäljare (Merchant of Record) – moms, kvitton och återbetalningar sköts av Polar. Licensnyckeln aktiveras i sidopanelen: Tillägg › Kronkalkyl › Licens &amp; Pro.</p>
+
+<h2 id="hjalp">Hjälp</h2>
+<p><b>Hur aktiverar jag Pro?</b> Öppna Tillägg › Kronkalkyl › Licens &amp; Pro och klistra in licensnyckeln från kvittot. Nyckeln sparas på ditt konto och kan användas i fler kalkylark med knappen ”Använd min sparade nyckel”.</p>
+<p><b>Varifrån kommer kurserna?</b> Från Sveriges riksbanks öppna API. Om det inte svarar används Europeiska centralbankens referenskurser. Kurserna är indikativa och publiceras bankdagar ca kl. 16.15. På helger och helgdagar används senast publicerade kurs.</p>
+<p><b>Skickas personnummer någonstans?</b> Nej. Kontroller av person-, organisations-, konto-, OCR- och gironummer räknas helt i kalkylarket. Bara valutakoder/datum (till Riksbanken/ECB), momsnummer (till VIES) och licensnyckeln (till Polar) skickas utanför Google.</p>
+<p><b>Kontakt:</b> <a href="mailto:support@kronkalkyl.se">support@kronkalkyl.se</a></p>
+
+<h2 id="english">English</h2>
+<p>Kronkalkyl adds Swedish finance formulas to Google Sheets: Riksbank exchange rates by date and period averages (ECB fallback), Swedish bank days and public holidays, OCR references, Bankgiro/Plusgiro, Swedish account numbers to IBAN, organisation and personal identity numbers, and EU VAT number validity checks via VIES. Free tier for identity numbers and holidays; Pro unlocks everything for €6/month or €48/year with a 14-day free trial; Team is €15/month for up to 5 people. Contact: <a href="mailto:support@kronkalkyl.se">support@kronkalkyl.se</a>.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Integritetspolicy / Privacy</a> · <a href="terms.html">Villkor / Terms</a> · Kronkalkyl är inte knutet till Sveriges riksbank, ECB, Bankgirot eller Europeiska kommissionen.</footer>
+</body>
+</html>
