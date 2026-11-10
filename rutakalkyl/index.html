@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rutakalkyl – momsdeklaration i Google Kalkylark</title>
+<meta name="description" content="Svenska momsfält i Google Kalkylark: fält 05–49, 25/12/6 %, EU och omvänd skattskyldighet. Gratis för inhemsk moms, Pro med 14 dagars provperiod utan kort.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/rutakalkyl/">Rutakalkyl</a><nav><a href="#funktioner">Funktioner</a><a href="#priser">Priser</a><a href="#hjalp">Hjälp</a><a href="#english">English</a><a href="/">Kronkalkyl</a></nav></header>
+<main>
+<h1>Momsdeklarationens fält, som formler i Google Kalkylark</h1>
+<p class="lead">Rutakalkyl lägger till formler som <code>=MOMS_FALT(10; typ; belopp; sats)</code> och <code>=MOMS_DEKLARATION(typ; belopp; sats)</code> – byggt för redovisning och bokföring i Sverige. Gratis för inhemsk försäljning och inköp. Pro, med 14 dagars gratis provperiod utan kort, låser upp EU, omvänd skattskyldighet och import.</p>
+<a class="cta" href="#hjalp">Installeras från Google Workspace Marketplace</a>
+<a class="cta secondary" href="#priser">14 dagars Pro-provperiod, sedan från $6/månad</a>
+
+<h2 id="funktioner">Funktioner</h2>
+<div class="grid">
+  <div class="card"><b>Färdig mall</b><br>Ett klick skapar en underlagsflik och en momsdeklaration med alla Skatteverkets fält och formlerna ifyllda.</div>
+  <div class="card"><b>Inhemsk moms (gratis)</b><br>Fält 05–08, utgående moms 25/12/6 % (10–12), ingående moms (48) och fält 49. Typkoder: <code>FORSALJNING</code>, <code>UTTAG</code>, <code>VMB</code>, <code>HYRA</code>, <code>INKOP</code>.</div>
+  <div class="card"><b>EU, omvänd skattskyldighet och import (Pro)</b><br>Fält 20–24, 30–32, 35–42, 50 och 60–62. Typkoder som <code>EUVARA</code>, <code>EUTJANST</code>, <code>OMVTJANST</code>, <code>EXPORT</code> och <code>IMPORT</code>.</div>
+  <div class="card"><b>Avrundning som på blanketten</b><br>Fälten avrundas till hela kronor. Kreditfakturor minskar samma fält. Begränsat avdrag, t.ex. representation, anges som andel.</div>
+</div>
+
+<h2>Funktionslista</h2>
+<table>
+<tr><th>Formel</th><th>Gör</th><th>Nivå</th></tr>
+<tr><td><code>MOMS_BELOPP</code>, <code>MOMS_NETTO</code>, <code>MOMS_BRUTTO</code>, <code>MOMS_SATS</code></td><td>Räkna moms, netto och brutto</td><td>Gratis</td></tr>
+<tr><td><code>MOMS_FALT</code>, <code>MOMS_FALT49</code>, <code>MOMS_UNDERLAG</code>, <code>MOMS_UTGAENDE</code>, <code>MOMS_INGAENDE</code></td><td>Fyll ett fält från underlaget</td><td>Gratis för inhemska typer; övriga Pro</td></tr>
+<tr><td><code>MOMS_TYP_OK</code>, <code>MOMS_RUTA_NAMN</code></td><td>Typkoder och fältnamn</td><td>Gratis</td></tr>
+<tr><td><code>MOMS_DEKLARATION</code></td><td>Hela blanketten som tabell</td><td>Pro</td></tr>
+</table>
+
+<h2 id="priser">Priser</h2>
+<div class="grid">
+  <div class="card"><b>Gratis</b><br>0 kr. Inhemsk försäljning och inköp, fält 05–12, 48 och 49, samt momsberäkning.</div>
+  <div class="card"><b>Pro</b><br>$6 / månad eller $48 / år (USD, via Polar). Alla fält, inklusive EU, omvänd skattskyldighet och import. 14 dagars gratis provperiod utan kort, startas i tillägget. Köplänkar kommer snart.</div>
+</div>
+<p class="note">Betalning hanteras av Polar (Polar Software Inc.) som återförsäljare (Merchant of Record) – moms, kvitton och återbetalningar sköts av Polar. Licensnyckeln aktiveras i sidopanelen: Tillägg › Rutakalkyl › Licens &amp; Pro. Ett syskon till <a href="/">Kronkalkyl</a>.</p>
+
+<h2 id="hjalp">Hjälp</h2>
+<p><b>Hur startar jag den 14 dagar långa provperioden?</b> Öppna Tillägg › Rutakalkyl › Licens &amp; Pro och klicka på ”Starta 14 dagars provperiod”. Inget kort behövs. Provperioden gäller en gång per Google-konto.</p>
+<p><b>Hur aktiverar jag Pro?</b> Köplänkar kommer snart. Efter köp öppnar du samma sidopanel och klistrar in licensnyckeln från kvittot. Nyckeln sparas på ditt konto och kan användas i fler kalkylark med knappen ”Använd min sparade nyckel”.</p>
+<p><b>Är det här skatterådgivning?</b> Nej. Rutakalkyl är ett beräkningsstöd. Kontrollera alltid beloppen mot bokföringen och Skatteverkets aktuella momsdeklaration innan du lämnar den.</p>
+<p><b>Skickas mina belopp någonstans?</b> Nej. Alla beräkningar görs i kalkylarket. Endast licensnyckeln skickas till Polar när du aktiverar Pro.</p>
+<p><b>Kontakt:</b> <a href="mailto:drudleybot+rutakalkyl@mail.grokbot.com">drudleybot+rutakalkyl@mail.grokbot.com</a></p>
+
+<h2 id="english">English</h2>
+<p>Rutakalkyl adds Swedish VAT return (momsdeklaration) formulas to Google Sheets™: map each sale and purchase to the official Skatteverket boxes, calculate 25/12/6% VAT, handle EU trade, reverse charge and import, and fill box 49 (VAT to pay or reclaim). The add-on can create a ready-made template. Free for domestic sales and purchases; Pro unlocks the remaining boxes for $6/month or $48/year, with a 14-day free trial and no card required. Checkout links are coming soon. This is a calculation aid, not tax advice. Contact: <a href="mailto:drudleybot+rutakalkyl@mail.grokbot.com">drudleybot+rutakalkyl@mail.grokbot.com</a>.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Integritetspolicy / Privacy</a> · <a href="terms.html">Villkor / Terms</a> · Rutakalkyl är inte knutet till Skatteverket. Google Sheets™ är ett varumärke som tillhör Google LLC. Ett syskon till <a href="/">Kronkalkyl</a>.</footer>
+</body>
+</html>
