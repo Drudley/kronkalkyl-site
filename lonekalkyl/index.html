@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lönekalkyl – arbetsgivaravgift och lönekostnad i Google Kalkylark</title>
+<meta name="description" content="Arbetsgivaravgifter i Google Kalkylark™: 31,42 %, nedsättningen för 19–23 år (2026–27), 67+, semesterersättning, ITP1 och total lönekostnad. 14 dagars Pro-provperiod.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/lonekalkyl/">Lönekalkyl</a><nav><a href="#features">Funktioner</a><a href="#priser">Priser</a><a href="#hjalp">Hjälp</a><a href="#other">English</a><a href="/">Kronkalkyl</a></nav></header>
+<main>
+<h1>Arbetsgivaravgifter och lönekostnad, som formler i Google Kalkylark</h1>
+<p class="lead">Skriv <code>=ARBETSGIVARAVGIFT(C2; B2; DATUM(2026;11;25))</code> så får du rätt avgift. Formeln hanterar 19–23-årsnedsättningen från 1 april 2026, 67+-regeln och 25 000-kronorsgränsen. Pro räknar total lönekostnad med ITP1 och särskild löneskatt.</p>
+<a class="cta" href="#hjalp">Installeras från Google Workspace Marketplace (granskning pågår)</a>
+<a class="cta secondary" href="#priser">14 dagars Pro-provperiod, sedan $5/månad eller $40/år</a>
+
+<h2 id="features">Funktioner</h2>
+<div class="grid">
+  <div class="card"><b>Rätt sats automatiskt</b><br>Satsen väljs från födelseår och utbetalningsdag: 31,42 %, 20,81 % (19–23 år, upp till 25 000 kr/mån), 10,21 % (67+) eller 0 %.</div>
+  <div class="card"><b>Semester</b><br><code>SEMESTERERSATTNING</code> (12 %), <code>SEMESTERTILLAGG</code> (0,43 %/dag) och i Pro <code>SEMESTERDAGSAVDRAG</code> (4,6 %/dag).</div>
+  <div class="card"><b>Total lönekostnad (Pro)</b><br><code>LONEKOSTNAD</code> och <code>LONEKOSTNAD_DETALJ</code> räknar med ITP1, egen pensionssats, särskild löneskatt 24,26 % och semesterpåslag.</div>
+  <div class="card"><b>Mall i ny flik</b><br>Tillägg › Lönekalkyl › Infoga lönekostnadsmall. Dina befintliga flikar ändras aldrig.</div>
+</div>
+
+<h2>Funktionslista</h2>
+<table>
+<tr><th>Formel</th><th>Gör</th><th>Nivå</th></tr>
+<tr><td><code>ARBETSGIVARAVGIFT</code></td><td>Avgift i kronor</td><td>Gratis</td></tr>
+<tr><td><code>AGA_SATS, AGA_KATEGORI</code></td><td>Sats och kategori</td><td>Gratis</td></tr>
+<tr><td><code>SEMESTERERSATTNING, SEMESTERTILLAGG</code></td><td>Semesterlön</td><td>Gratis</td></tr>
+<tr><td><code>LONEKOSTNAD, LONEKOSTNAD_DETALJ</code></td><td>Total lönekostnad</td><td>Pro</td></tr>
+<tr><td><code>ITP1_PREMIE</code></td><td>ITP1 4,5 %/30 %</td><td>Pro</td></tr>
+<tr><td><code>EGENAVGIFTER</code></td><td>Enskild firma 28,97 %</td><td>Pro</td></tr>
+<tr><td><code>SEMESTERDAGSAVDRAG</code></td><td>4,6 % per dag</td><td>Pro</td></tr>
+</table>
+
+<h2 id="priser">Priser</h2>
+<div class="grid">
+  <div class="card"><b>Gratis</b><br>0 kr. Arbetsgivaravgift med alla åldersregler, semesterersättning, semestertillägg, mall och satstabell.</div>
+  <div class="card"><b>Pro</b><br>$5 / månad eller $40 / år. Total lönekostnad, ITP1, egenavgifter och semesterdagsavdrag. 14 dagars gratis provperiod utan kort, startas i tillägget.</div>
+</div>
+<p class="note">Betalning hanteras av Polar (Polar Software Inc.) som återförsäljare (Merchant of Record). Licenser säljs inte ännu – provperioden fungerar redan.</p>
+
+<h2 id="hjalp">Hjälp</h2>
+<p>Installera tillägget och öppna Tillägg › Lönekalkyl › Infoga lönekostnadsmall. Formlerna fungerar i alla celler, och argumenten skiljs med semikolon i svensk språkinställning.</p>
+<p>Satserna gäller utbetalningar 2024–2027. Lönekalkyl är ett beräkningsstöd, inte skatterådgivning. Kontrollera alltid mot Skatteverket.</p>
+<p>Tillägget använder bara behörigheten för det öppna kalkylarket (<code>spreadsheets.currentonly</code>) och skickar inga data någonstans. Support: <a href="mailto:drudleybot+lonekalkyl@mail.grokbot.com">drudleybot+lonekalkyl@mail.grokbot.com</a></p>
+
+<h2 id="other">English</h2>
+<p>Lönekalkyl adds Swedish employer-contribution and salary-cost formulas to Google Sheets™. It covers the 2026–27 youth reduction (20.81% up to SEK 25,000 a month) and the 67+ rule, plus holiday pay, ITP1 pension and total employer cost. The free tier includes the contribution formulas. Pro costs $5/month or $40/year and comes with a 14-day free trial.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Integritet</a> · <a href="terms.html">Villkor</a> · Google Sheets is a trademark of Google LLC.</footer>
+</body>
+</html>
