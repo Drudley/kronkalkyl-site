@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU VAT Rates – dated EU-27 VAT rates as Google Sheets formulas</title>
+<meta name="description" content="EU-27 VAT rates in Google Sheets™: =EU_VAT_RATE("FI", date) with every change since 2020, plus net/gross conversion. Pro adds reduced rates and a full table. 14-day trial.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/vatrates/">EU VAT Rates</a><nav><a href="#features">Features</a><a href="#priser">Pricing</a><a href="#hjalp">Help</a><a href="#other">Svenska</a><a href="/">Kronkalkyl</a></nav></header>
+<main>
+<h1>The right EU VAT rate for the invoice date, in one formula</h1>
+<p class="lead"><code>=EU_VAT_RATE("FI"; A2)</code> gives 24 on 31 Aug 2024 and 25.5 from 1 Sep 2024. Every EU-27 standard-rate change since 2020 is built in, and Pro adds reduced rates and a full table.</p>
+<a class="cta" href="#hjalp">Install from Google Workspace Marketplace (in review)</a>
+<a class="cta secondary" href="#priser">14-day Pro trial, then $3/month or $24/year</a>
+
+<h2 id="features">Features</h2>
+<div class="grid">
+  <div class="card"><b>Dated standard rates</b><br>FI, EE, SK, RO, plus the temporary DE, IE and LU cuts, all handled by the invoice date.</div>
+  <div class="card"><b>Net ↔ gross</b><br>=EU_VAT_GROSS and =EU_VAT_NET, on single cells or ranges.</div>
+  <div class="card"><b>Reduced rates (Pro)</b><br>Reduced, super-reduced and parking rates by name, including Lithuania's 2026 reform.</div>
+  <div class="card"><b>Offline</b><br>A built-in table, so there are no API keys, no quotas and no network requests.</div>
+</div>
+
+<h2>Function list</h2>
+<table>
+<tr><th>Formula</th><th>Does</th><th>Tier</th></tr>
+<tr><td><code>EU_VAT_RATE</code></td><td>Standard rate on a date</td><td>Free</td></tr>
+<tr><td><code>EU_VAT_GROSS, EU_VAT_NET</code></td><td>Convert prices</td><td>Free</td></tr>
+<tr><td><code>EU_VAT_RATES</code></td><td>All rates for a country</td><td>Pro</td></tr>
+<tr><td><code>EU_VAT_AMOUNT</code></td><td>VAT at a rate type</td><td>Pro</td></tr>
+<tr><td><code>EU_VAT_TABLE</code></td><td>EU-27 table</td><td>Pro</td></tr>
+<tr><td><code>EU_VAT_HISTORY</code></td><td>Changes since 2020</td><td>Pro</td></tr>
+</table>
+
+<h2 id="priser">Pricing</h2>
+<div class="grid">
+  <div class="card"><b>Free</b><br>$0. Dated standard rates and net/gross conversion for all 27 member states.</div>
+  <div class="card"><b>Pro</b><br>$3 / month or $24 / year. Reduced, super-reduced and parking rates, VAT amounts by rate type, the EU table and history. 14-day free trial, no card.</div>
+</div>
+<p class="note">Payments will be handled by Polar (Polar Software Inc.) as Merchant of Record. Licences are not on sale yet – the trial already works.</p>
+
+<h2 id="hjalp">Help</h2>
+<p>Use Extensions › EU VAT Rates › Insert price-list example to get started.</p>
+<p>Rates are built in. When a country changes its rate, a new add-on version is published. Territorial variants are not included, and the rate for a specific product is your responsibility.</p>
+<p>The add-on uses only the current-spreadsheet permission (<code>spreadsheets.currentonly</code>) and sends no data anywhere. Support: <a href="mailto:drudleybot+vatrates@mail.grokbot.com">drudleybot+vatrates@mail.grokbot.com</a></p>
+
+<h2 id="other">Svenska</h2>
+<p>EU VAT Rates ger EU-ländernas momssatser per datum som formler i Google Kalkylark™, med alla ändringar sedan 2020. Pro ger reducerade satser och en hel tabell, för $3/mån eller $24/år med 14 dagars provperiod.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · Google Sheets is a trademark of Google LLC.</footer>
+</body>
+</html>

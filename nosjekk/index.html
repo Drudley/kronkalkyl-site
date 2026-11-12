@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NO-Sjekk – Norwegian fødselsnummer, KID and org.nr checks for Google Sheets</title>
+<meta name="description" content="Norwegian checks in Google Sheets™: fødselsnummer/D-nummer, organisasjonsnummer, KID (MOD10/MOD11), kontonummer, IBAN and virkedager. Offline. 14-day Pro trial.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/nosjekk/">NO-Sjekk</a><nav><a href="#features">Features</a><a href="#priser">Pricing</a><a href="#hjalp">Help</a><a href="#other">Svenska</a><a href="/">Kronkalkyl</a></nav></header>
+<main>
+<h1>Norwegian number checks, as Google Sheets formulas</h1>
+<p class="lead"><code>=NO_FNR_VALID(A2)</code>, <code>=NO_ORGNR_VALID(B2:B500)</code> and <code>=NO_KID_VALID(C2)</code> check the MOD10/MOD11 control digits offline. Pro creates KID numbers, converts accounts to IBAN and counts Norwegian working days.</p>
+<a class="cta" href="#hjalp">Install from Google Workspace Marketplace (in review)</a>
+<a class="cta secondary" href="#priser">14-day Pro trial, then $4/month or $32/year</a>
+
+<h2 id="features">Features</h2>
+<div class="grid">
+  <div class="card"><b>Personal numbers</b><br>Fødselsnummer, D-nummer, H-nummer and synthetic test numbers: both control digits plus the date. Pro also gives the date of birth, gender and type.</div>
+  <div class="card"><b>Business and bank</b><br>Organisasjonsnummer and VAT format, 11-digit kontonummer, and IBAN in Pro.</div>
+  <div class="card"><b>KID</b><br>Validate MOD10 and MOD11 KID references, or create them from customer and invoice numbers in Pro.</div>
+  <div class="card"><b>Virkedager (Pro)</b><br>Norwegian public holidays, working days between two dates, and adding working days to a date.</div>
+</div>
+
+<h2>Function list</h2>
+<table>
+<tr><th>Formula</th><th>Does</th><th>Tier</th></tr>
+<tr><td><code>NO_FNR_VALID</code></td><td>Fødselsnummer / D-nummer</td><td>Free</td></tr>
+<tr><td><code>NO_ORGNR_VALID, NO_VAT_FORMAT</code></td><td>Organisasjonsnummer</td><td>Free</td></tr>
+<tr><td><code>NO_KID_VALID</code></td><td>KID MOD10/MOD11</td><td>Free</td></tr>
+<tr><td><code>NO_ACCOUNT_VALID</code></td><td>Kontonummer</td><td>Free</td></tr>
+<tr><td><code>NO_KID_CREATE</code></td><td>Create KID</td><td>Pro</td></tr>
+<tr><td><code>NO_ACCOUNT_IBAN</code></td><td>IBAN</td><td>Pro</td></tr>
+<tr><td><code>NO_FNR_BIRTHDATE, NO_FNR_GENDER, NO_FNR_TYPE</code></td><td>Details</td><td>Pro</td></tr>
+<tr><td><code>NO_HOLIDAY, NO_HOLIDAYS, NO_WORKDAYS, NO_WORKDAY_ADD</code></td><td>Holidays and working days</td><td>Pro</td></tr>
+</table>
+
+<h2 id="priser">Pricing</h2>
+<div class="grid">
+  <div class="card"><b>Free</b><br>$0. All four validators, on single cells or whole ranges.</div>
+  <div class="card"><b>Pro</b><br>$4 / month or $32 / year. KID creation, IBAN, fødselsnummer details, holidays and working days, and the column checker. 14-day free trial, no card.</div>
+</div>
+<p class="note">Payments will be handled by Polar (Polar Software Inc.) as Merchant of Record. Licences are not on sale yet – the trial already works.</p>
+
+<h2 id="hjalp">Help</h2>
+<p>Install the add-on, then use Extensions › NO-Sjekk › Insert example sheet. Every validator accepts a range and returns TRUE/FALSE for each cell.</p>
+<p>NO-Sjekk validates format and check digits only. It does not look anything up in Brønnøysundregistrene or Folkeregisteret.</p>
+<p>The add-on uses only the current-spreadsheet permission (<code>spreadsheets.currentonly</code>) and sends no data anywhere. Support: <a href="mailto:drudleybot+nosjekk@mail.grokbot.com">drudleybot+nosjekk@mail.grokbot.com</a></p>
+
+<h2 id="other">Svenska</h2>
+<p>NO-Sjekk lägger till kontroller av norska fødselsnummer, organisasjonsnummer, KID och kontonummer i Google Kalkylark™. Allt körs offline. Pro skapar KID, IBAN och räknar norska arbetsdagar för $4/mån eller $32/år, med 14 dagars provperiod.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · Google Sheets is a trademark of Google LLC.</footer>
+</body>
+</html>

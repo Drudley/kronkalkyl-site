@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fakturaränta – dröjsmålsränta i Google Kalkylark</title>
+<meta name="description" content="Dröjsmålsränta i Google Kalkylark™: referensräntan + 8 procentenheter per halvår, påminnelseavgift 60 kr, förseningsersättning 450 kr och åldersanalys. 14 dagars Pro-provperiod.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/fakturaranta/">Fakturaränta</a><nav><a href="#features">Funktioner</a><a href="#priser">Priser</a><a href="#hjalp">Hjälp</a><a href="#other">English</a><a href="/">Kronkalkyl</a></nav></header>
+<main>
+<h1>Dröjsmålsränta på förfallna fakturor, som formler i Google Kalkylark</h1>
+<p class="lead"><code>=DROJSMALSRANTA(C2; D2; E2)</code> räknar räntelagens referensränta + 8 procentenheter med rätt sats för varje halvår. Pro lägger till räntefaktura, förseningsersättning och åldersanalys.</p>
+<a class="cta" href="#hjalp">Installeras från Google Workspace Marketplace (granskning pågår)</a>
+<a class="cta secondary" href="#priser">14 dagars Pro-provperiod, sedan $4/månad eller $32/år</a>
+
+<h2 id="features">Funktioner</h2>
+<div class="grid">
+  <div class="card"><b>Rätt sats per halvår</b><br>Riksbankens referensränta från 2020. Om förseningen går över ett halvårsskifte räknas varje del för sig.</div>
+  <div class="card"><b>Avgifter</b><br>Påminnelseavgift 60 kr, förseningsersättning 450 kr (B2B) och inkassoavgift 180 kr.</div>
+  <div class="card"><b>Åldersanalys (Pro)</b><br>Ej förfallet, 1–30, 31–60, 61–90 och över 90 dagar, med antal och belopp.</div>
+  <div class="card"><b>Visa uträkningen (Pro)</b><br><code>RANTA_PERIODER</code> ger en rad per period, med sats, dagar och ränta.</div>
+</div>
+
+<h2>Funktionslista</h2>
+<table>
+<tr><th>Formel</th><th>Gör</th><th>Nivå</th></tr>
+<tr><td><code>DROJSMALSRANTA</code></td><td>Ränta i kronor</td><td>Gratis</td></tr>
+<tr><td><code>REFERENSRANTA, DROJSMALSRANTA_SATS</code></td><td>Räntesatser</td><td>Gratis</td></tr>
+<tr><td><code>DAGAR_SENT, FORFALLODAG, INKASSOAVGIFT</code></td><td>Datum och avgifter</td><td>Gratis</td></tr>
+<tr><td><code>RANTEFAKTURA</code></td><td>Hel räntefaktura</td><td>Pro</td></tr>
+<tr><td><code>ALDERSANALYS</code></td><td>Åldersanalys</td><td>Pro</td></tr>
+<tr><td><code>RANTA_PERIODER</code></td><td>Uträkning per halvår</td><td>Pro</td></tr>
+</table>
+
+<h2 id="priser">Priser</h2>
+<div class="grid">
+  <div class="card"><b>Gratis</b><br>0 kr. Dröjsmålsränta, referensränta, förfallodag, avgifter och mall.</div>
+  <div class="card"><b>Pro</b><br>$4 / månad eller $32 / år. Räntefaktura, åldersanalys, uträkning per halvår och reskontramall. 14 dagars gratis provperiod utan kort.</div>
+</div>
+<p class="note">Betalning hanteras av Polar (Polar Software Inc.) som återförsäljare (Merchant of Record). Licenser säljs inte ännu – provperioden fungerar redan.</p>
+
+<h2 id="hjalp">Hjälp</h2>
+<p>Dröjsmålsränta enligt räntelagen gäller om inget annat avtalats. Ange ett annat påslag som sista argument, t.ex. <code>=DROJSMALSRANTA(C2; D2; E2; 0,12)</code>.</p>
+<p>Påminnelseavgift får bara tas ut om den är avtalad. Förseningsersättning på 450 kr gäller mellan näringsidkare.</p>
+<p>Tillägget använder bara behörigheten för det öppna kalkylarket (<code>spreadsheets.currentonly</code>) och skickar inga data någonstans. Support: <a href="mailto:drudleybot+fakturaranta@mail.grokbot.com">drudleybot+fakturaranta@mail.grokbot.com</a></p>
+
+<h2 id="other">English</h2>
+<p>Fakturaränta adds Swedish late-payment interest formulas to Google Sheets™: the Riksbank reference rate + 8 percentage points, split per half-year, with statutory fees, due dates and, in Pro, receivables ageing. Pro costs $4/month or $32/year, with a 14-day trial.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Integritet</a> · <a href="terms.html">Villkor</a> · Google Sheets is a trademark of Google LLC.</footer>
+</body>
+</html>

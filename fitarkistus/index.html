@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FI-Tarkistus – henkilötunnus, Y-tunnus, viitenumero and virtual barcode for Google Sheets</title>
+<meta name="description" content="Finnish checks in Google Sheets™: henkilötunnus (2023 signs), Y-tunnus, viitenumero, RF, IBAN, plus the virtual bank barcode and pankkipäivät. 14-day Pro trial.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/fitarkistus/">FI-Tarkistus</a><nav><a href="#features">Features</a><a href="#priser">Pricing</a><a href="#hjalp">Help</a><a href="#other">Svenska</a><a href="/">Kronkalkyl</a></nav></header>
+<main>
+<h1>Finnish ID and payment-reference checks, as Google Sheets formulas</h1>
+<p class="lead"><code>=FI_HETU_VALID(A2)</code> handles the 2023 century signs. <code>=FI_REF_VALID(B2)</code> checks viitenumero and RF references. Pro creates references, RF and the 54-digit virtuaaliviivakoodi, and counts pankkipäivät.</p>
+<a class="cta" href="#hjalp">Install from Google Workspace Marketplace (in review)</a>
+<a class="cta secondary" href="#priser">14-day Pro trial, then $4/month or $32/year</a>
+
+<h2 id="features">Features</h2>
+<div class="grid">
+  <div class="card"><b>Henkilötunnus</b><br>Date, check character and every century sign: +, -, Y–U and A–F.</div>
+  <div class="card"><b>Business and bank</b><br>Y-tunnus, ALV-numero (Pro) and IBAN for every country.</div>
+  <div class="card"><b>Invoices (Pro)</b><br>Viitenumero from an invoice number, RF creditor reference and the virtual bank barcode, versions 4 and 5.</div>
+  <div class="card"><b>Bank days (Pro)</b><br>Finnish holidays including juhannus and pyhäinpäivä, and bank-day counting.</div>
+</div>
+
+<h2>Function list</h2>
+<table>
+<tr><th>Formula</th><th>Does</th><th>Tier</th></tr>
+<tr><td><code>FI_HETU_VALID</code></td><td>Henkilötunnus</td><td>Free</td></tr>
+<tr><td><code>FI_YTUNNUS_VALID</code></td><td>Y-tunnus</td><td>Free</td></tr>
+<tr><td><code>FI_REF_VALID</code></td><td>Viitenumero / RF</td><td>Free</td></tr>
+<tr><td><code>FI_IBAN_VALID</code></td><td>IBAN</td><td>Free</td></tr>
+<tr><td><code>FI_REF_CREATE, FI_RF_CREATE</code></td><td>Create references</td><td>Pro</td></tr>
+<tr><td><code>FI_BARCODE</code></td><td>Virtuaaliviivakoodi</td><td>Pro</td></tr>
+<tr><td><code>FI_HETU_BIRTHDATE, FI_HETU_GENDER, FI_VAT_NUMBER</code></td><td>Details</td><td>Pro</td></tr>
+<tr><td><code>FI_HOLIDAY, FI_HOLIDAYS, FI_BANKDAYS, FI_BANKDAY_ADD</code></td><td>Holidays and bank days</td><td>Pro</td></tr>
+</table>
+
+<h2 id="priser">Pricing</h2>
+<div class="grid">
+  <div class="card"><b>Free</b><br>$0. Four validators, on single cells or whole ranges.</div>
+  <div class="card"><b>Pro</b><br>$4 / month or $32 / year. References, RF, virtual barcode, details, bank days and the column checker. 14-day free trial, no card.</div>
+</div>
+<p class="note">Payments will be handled by Polar (Polar Software Inc.) as Merchant of Record. Licences are not on sale yet – the trial already works.</p>
+
+<h2 id="hjalp">Help</h2>
+<p>Use Extensions › FI-Tarkistus › Insert example sheet to get started. Every validator accepts a range.</p>
+<p>FI-Tarkistus validates format and check digits only. It does not query DVV, PRH or YTJ.</p>
+<p>The add-on uses only the current-spreadsheet permission (<code>spreadsheets.currentonly</code>) and sends no data anywhere. Support: <a href="mailto:drudleybot+fitarkistus@mail.grokbot.com">drudleybot+fitarkistus@mail.grokbot.com</a></p>
+
+<h2 id="other">Svenska</h2>
+<p>FI-Tarkistus lägger till kontroller av finska henkilötunnus, Y-tunnus, viitenumero, RF och IBAN i Google Kalkylark™. Pro skapar referenser och den virtuella streckkoden och räknar finska bankdagar, för $4/mån eller $32/år med 14 dagars provperiod.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · Google Sheets is a trademark of Google LLC.</footer>
+</body>
+</html>

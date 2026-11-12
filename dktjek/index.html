@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DK-Tjek – CPR, CVR, FI-kort (+71) and bank days for Google Sheets</title>
+<meta name="description" content="Danish checks in Google Sheets™: CPR (with or without modulus 11), CVR and FI-kort +71/+75/+04. Pro creates payment lines and IBANs and counts bankdage. 14-day trial.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a href="/dktjek/">DK-Tjek</a><nav><a href="#features">Features</a><a href="#priser">Pricing</a><a href="#hjalp">Help</a><a href="#other">Svenska</a><a href="/">Kronkalkyl</a></nav></header>
+<main>
+<h1>Danish CPR, CVR and FI-kort checks, as Google Sheets formulas</h1>
+<p class="lead"><code>=DK_CVR_VALID(A2)</code>, <code>=DK_CPR_VALID(B2)</code> and <code>=DK_FIK_VALID(C2)</code>. Pro creates +71/+75/+04 payment lines and IBANs and counts bankdage.</p>
+<a class="cta" href="#hjalp">Install from Google Workspace Marketplace (in review)</a>
+<a class="cta secondary" href="#priser">14-day Pro trial, then $4/month or $32/year</a>
+
+<h2 id="features">Features</h2>
+<div class="grid">
+  <div class="card"><b>CPR</b><br>Date and century digit, with modulus 11 optional because not every CPR number issued since 2007 satisfies it.</div>
+  <div class="card"><b>CVR and moms</b><br>CVR modulus 11 and the DK momsnummer format.</div>
+  <div class="card"><b>FI-kort (Pro)</b><br>Payment lines with the modulus 10 check digit for +71, +75 and +04.</div>
+  <div class="card"><b>Bank days (Pro)</b><br>Helligdage without store bededag from 2024, plus the banks' extra closing days.</div>
+</div>
+
+<h2>Function list</h2>
+<table>
+<tr><th>Formula</th><th>Does</th><th>Tier</th></tr>
+<tr><td><code>DK_CPR_VALID</code></td><td>CPR</td><td>Free</td></tr>
+<tr><td><code>DK_CVR_VALID, DK_VAT_FORMAT</code></td><td>CVR / momsnr.</td><td>Free</td></tr>
+<tr><td><code>DK_FIK_VALID</code></td><td>FI-kort</td><td>Free</td></tr>
+<tr><td><code>DK_FIK_CREATE</code></td><td>Create payment line</td><td>Pro</td></tr>
+<tr><td><code>DK_ACCOUNT_IBAN</code></td><td>Reg.nr + konto to IBAN</td><td>Pro</td></tr>
+<tr><td><code>DK_CPR_BIRTHDATE, DK_CPR_GENDER</code></td><td>CPR details</td><td>Pro</td></tr>
+<tr><td><code>DK_HOLIDAY, DK_HOLIDAYS, DK_BANKDAYS, DK_BANKDAY_ADD</code></td><td>Holidays and bank days</td><td>Pro</td></tr>
+</table>
+
+<h2 id="priser">Pricing</h2>
+<div class="grid">
+  <div class="card"><b>Free</b><br>$0. CPR, CVR and FI-kort validators, on single cells or whole ranges.</div>
+  <div class="card"><b>Pro</b><br>$4 / month or $32 / year. Payment lines, IBAN, CPR details, bank days and the column checker. 14-day free trial, no card.</div>
+</div>
+<p class="note">Payments will be handled by Polar (Polar Software Inc.) as Merchant of Record. Licences are not on sale yet – the trial already works.</p>
+
+<h2 id="hjalp">Help</h2>
+<p>Use Extensions › DK-Tjek › Insert example sheet to get started. Every validator accepts a range.</p>
+<p>DK-Tjek validates format and check digits only. It does not query CPR or CVR.</p>
+<p>The add-on uses only the current-spreadsheet permission (<code>spreadsheets.currentonly</code>) and sends no data anywhere. Support: <a href="mailto:drudleybot+dktjek@mail.grokbot.com">drudleybot+dktjek@mail.grokbot.com</a></p>
+
+<h2 id="other">Svenska</h2>
+<p>DK-Tjek lägger till kontroller av danska CPR, CVR och FI-kort i Google Kalkylark™. Pro skapar betalrader och IBAN och räknar danska bankdagar, för $4/mån eller $32/år med 14 dagars provperiod.</p>
+</main>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · Google Sheets is a trademark of Google LLC.</footer>
+</body>
+</html>
