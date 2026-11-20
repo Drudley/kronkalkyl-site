@@ -4,16 +4,123 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lönekalkyl – arbetsgivaravgift och lönekostnad i Google Kalkylark</title>
-<meta name="description" content="Arbetsgivaravgifter i Google Kalkylark™: 31,42 %, nedsättningen för 19–23 år (2026–27), 67+, semesterersättning, ITP1 och total lönekostnad. 14 dagars Pro-provperiod.">
+<meta name="description" content="Räkna arbetsgivaravgift i Google Kalkylark med rätt sats: 31,42 %, nedsättning för 19–23 år (2026–27), 67+ och 25 000-kronorsgränsen. Gratis nivå och 14 dagars Pro-provperiod utan kort.">
+<link rel="canonical" href="https://kronkalkyl.se/lonekalkyl/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="Lönekalkyl">
+<meta property="og:title" content="Lönekalkyl – arbetsgivaravgift och lönekostnad i Google Kalkylark">
+<meta property="og:description" content="Räkna arbetsgivaravgift i Google Kalkylark med rätt sats: 31,42 %, nedsättning för 19–23 år (2026–27), 67+ och 25 000-kronorsgränsen. Gratis nivå och 14 dagars Pro-provperiod utan kort.">
+<meta property="og:url" content="https://kronkalkyl.se/lonekalkyl/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lönekalkyl – arbetsgivaravgift och lönekostnad i Google Kalkylark">
+<meta name="twitter:description" content="Räkna arbetsgivaravgift i Google Kalkylark med rätt sats: 31,42 %, nedsättning för 19–23 år (2026–27), 67+ och 25 000-kronorsgränsen. Gratis nivå och 14 dagars Pro-provperiod utan kort.">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://kronkalkyl.se/lonekalkyl/#app",
+      "name": "Lönekalkyl",
+      "url": "https://kronkalkyl.se/lonekalkyl/",
+      "description": "Räkna arbetsgivaravgift i Google Kalkylark med rätt sats: 31,42 %, nedsättning för 19–23 år (2026–27), 67+ och 25 000-kronorsgränsen. Gratis nivå och 14 dagars Pro-provperiod utan kort.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Google Sheets",
+      "inLanguage": "sv",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Person",
+        "name": "Niklas Bergström"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Gratis",
+          "price": "0",
+          "priceCurrency": "SEK"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro månad",
+          "price": "5",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro år",
+          "price": "40",
+          "priceCurrency": "USD"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kronkalkyl.se/lonekalkyl/#faq",
+      "inLanguage": "sv",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hur installerar jag Lönekalkyl?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tillägget granskas fortfarande av Google Workspace Marketplace. När det är godkänt installerar du det därifrån. Öppna sedan ett kalkylark och välj Tillägg › Lönekalkyl › Infoga lönekostnadsmall, eller skriv formlerna i valfri cell. Argumenten skiljs med semikolon i svensk språkinställning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hur räknar jag rätt arbetsgivaravgift?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skriv =ARBETSGIVARAVGIFT(lön; födelseår; utbetalningsdag) i en cell. Formeln väljer sats från födelseår och utbetalningsdag, inklusive nedsättningen för 19–23 år från 1 april 2026, 25 000-kronorsgränsen och 67+-regeln."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vad ingår i gratisversionen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Arbetsgivaravgift med alla åldersregler, semesterersättning, semestertillägg, lönekostnadsmall och satstabell. Pro lägger till total lönekostnad, ITP1, egenavgifter och semesterdagsavdrag, med 14 dagars provperiod utan kort som startas i tillägget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Skickas löneuppgifter någonstans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej. Tillägget använder bara behörigheten för det öppna kalkylarket (spreadsheets.currentonly) och skickar inga data någonstans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Är Lönekalkyl skatterådgivning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej. Lönekalkyl är ett beräkningsstöd, inte skatterådgivning. Satserna gäller utbetalningar 2024–2027. Kontrollera alltid mot Skatteverket."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<header><a href="/lonekalkyl/">Lönekalkyl</a><nav><a href="#features">Funktioner</a><a href="#priser">Priser</a><a href="#hjalp">Hjälp</a><a href="#other">English</a><a href="/">Kronkalkyl</a></nav></header>
+<header><a href="/lonekalkyl/">Lönekalkyl</a><nav><a href="#features">Funktioner</a><a href="#priser">Priser</a><a href="#faq">Frågor</a><a href="#other">English</a><a href="/">Kronkalkyl</a></nav></header>
 <main>
 <h1>Arbetsgivaravgifter och lönekostnad, som formler i Google Kalkylark</h1>
-<p class="lead">Skriv <code>=ARBETSGIVARAVGIFT(C2; B2; DATUM(2026;11;25))</code> så får du rätt avgift. Formeln hanterar 19–23-årsnedsättningen från 1 april 2026, 67+-regeln och 25 000-kronorsgränsen. Pro räknar total lönekostnad med ITP1 och särskild löneskatt.</p>
-<a class="cta" href="#hjalp">Installeras från Google Workspace Marketplace (granskning pågår)</a>
+<p class="lead">Att räkna rätt arbetsgivaravgift i kalkylarket är lätt att göra fel – satsen beror på ålder, utbetalningsdag och beloppsgränser. Lönekalkyl väljer rätt sats åt dig. Skriv <code>=ARBETSGIVARAVGIFT(C2; B2; DATUM(2026;11;25))</code> så får du avgiften i kronor. Formeln hanterar 19–23-årsnedsättningen från 1 april 2026, 67+-regeln och 25 000-kronorsgränsen. Pro räknar total lönekostnad med ITP1 och särskild löneskatt.</p>
+<a class="cta" href="#faq">Installeras från Google Workspace Marketplace (granskning pågår)</a>
 <a class="cta secondary" href="#priser">14 dagars Pro-provperiod, sedan $5/månad eller $40/år</a>
+
+<h2 id="sa-funkar-det">Så fungerar det</h2>
+<ol class="steps">
+<li>När tillägget är godkänt på Google Workspace Marketplace installerar du det i ett kalkylark. Granskningen pågår fortfarande.</li>
+<li>Öppna Tillägg › Lönekalkyl › Infoga lönekostnadsmall, eller skriv formlerna själv, till exempel <code>=ARBETSGIVARAVGIFT(C2; B2; DATUM(2026;11;25))</code>.</li>
+<li>Pro, med total lönekostnad och ITP1, har 14 dagars provperiod utan kort. Den startas i tillägget.</li>
+</ol>
+<p>Behöver du org.nr, bankdagar, OCR eller Riksbankens kurser i samma typ av kalkylark? Se <a href="/">Kronkalkyl</a>.</p>
 
 <h2 id="features">Funktioner</h2>
 <div class="grid">
@@ -42,14 +149,19 @@
 </div>
 <p class="note">Betalning hanteras av Polar (Polar Software Inc.) som återförsäljare (Merchant of Record). Licenser säljs inte ännu – provperioden fungerar redan.</p>
 
-<h2 id="hjalp">Hjälp</h2>
-<p>Installera tillägget och öppna Tillägg › Lönekalkyl › Infoga lönekostnadsmall. Formlerna fungerar i alla celler, och argumenten skiljs med semikolon i svensk språkinställning.</p>
-<p>Satserna gäller utbetalningar 2024–2027. Lönekalkyl är ett beräkningsstöd, inte skatterådgivning. Kontrollera alltid mot Skatteverket.</p>
-<p>Tillägget använder bara behörigheten för det öppna kalkylarket (<code>spreadsheets.currentonly</code>) och skickar inga data någonstans. Support: <a href="mailto:drudleybot+lonekalkyl@mail.grokbot.com">drudleybot+lonekalkyl@mail.grokbot.com</a></p>
+<h2 id="faq">Vanliga frågor</h2>
+<section class="faq" id="faq" aria-label="Vanliga frågor">
+<details><summary>Hur installerar jag Lönekalkyl?</summary><p>Tillägget granskas fortfarande av Google Workspace Marketplace. När det är godkänt installerar du det därifrån. Öppna sedan ett kalkylark och välj Tillägg › Lönekalkyl › Infoga lönekostnadsmall, eller skriv formlerna i valfri cell. Argumenten skiljs med semikolon i svensk språkinställning.</p></details>
+<details><summary>Hur räknar jag rätt arbetsgivaravgift?</summary><p>Skriv =ARBETSGIVARAVGIFT(lön; födelseår; utbetalningsdag) i en cell. Formeln väljer sats från födelseår och utbetalningsdag, inklusive nedsättningen för 19–23 år från 1 april 2026, 25 000-kronorsgränsen och 67+-regeln.</p></details>
+<details><summary>Vad ingår i gratisversionen?</summary><p>Arbetsgivaravgift med alla åldersregler, semesterersättning, semestertillägg, lönekostnadsmall och satstabell. Pro lägger till total lönekostnad, ITP1, egenavgifter och semesterdagsavdrag, med 14 dagars provperiod utan kort som startas i tillägget.</p></details>
+<details><summary>Skickas löneuppgifter någonstans?</summary><p>Nej. Tillägget använder bara behörigheten för det öppna kalkylarket (spreadsheets.currentonly) och skickar inga data någonstans.</p></details>
+<details><summary>Är Lönekalkyl skatterådgivning?</summary><p>Nej. Lönekalkyl är ett beräkningsstöd, inte skatterådgivning. Satserna gäller utbetalningar 2024–2027. Kontrollera alltid mot Skatteverket.</p></details>
+</section>
+<p id="hjalp">Support: <a href="mailto:drudleybot+lonekalkyl@mail.grokbot.com">drudleybot+lonekalkyl@mail.grokbot.com</a></p>
 
 <h2 id="other">English</h2>
-<p>Lönekalkyl adds Swedish employer-contribution and salary-cost formulas to Google Sheets™. It covers the 2026–27 youth reduction (20.81% up to SEK 25,000 a month) and the 67+ rule, plus holiday pay, ITP1 pension and total employer cost. The free tier includes the contribution formulas. Pro costs $5/month or $40/year and comes with a 14-day free trial.</p>
+<p>Lönekalkyl adds Swedish employer-contribution and salary-cost formulas to Google Sheets™. It covers the 2026–27 youth reduction (20.81% up to SEK 25,000 a month) and the 67+ rule, plus holiday pay, ITP1 pension and total employer cost. The free tier includes the contribution formulas. Pro costs $5/month or $40/year and comes with a 14-day free trial. Marketplace review is still in progress. For organisation numbers, bank days and Riksbank rates, see <a href="/">Kronkalkyl</a>.</p>
 </main>
-<footer>© 2026 Niklas Bergström · <a href="privacy.html">Integritet</a> · <a href="terms.html">Villkor</a> · Google Sheets is a trademark of Google LLC.</footer>
+<footer>© 2026 Niklas Bergström · <a href="privacy.html">Integritet</a> · <a href="terms.html">Villkor</a> · Google Sheets is a trademark of Google LLC. · <a href="/">Kronkalkyl</a></footer>
 </body>
 </html>
